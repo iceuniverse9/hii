@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Love for Sahana 🌌</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Love for Sahana</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="music.mp3" type="audio/mp3">
-    </audio>
+  <!-- Background Canvas for 3D Universe -->
+  <canvas id="universe"></canvas>
 
-    <div class="galaxy">
-        <h1 class="title">To My Star, Sahana 💫</h1>
-        <canvas id="stars"></canvas>
-        <p class="story">
-            "Across the universe, among the twinkling constellations, 
-            there's one star that shines the brightest... You.  
-            Every night, I look up and feel lucky that our paths aligned.  
-            Even light-years away, you are my closest galaxy."
-        </p>
+  <!-- Welcome Message -->
+  <div id="welcome-message">
+    <h1>Welcome to Our Universe, Sahana</h1>
+    <p>Scroll to explore the stars and discover our love story.</p>
+  </div>
 
-        <div class="planets">
-            <img src="images/planet1.png" class="planet" id="planet1">
-            <img src="images/planet2.png" class="planet" id="planet2">
-        </div>
+  <!-- Hidden Content (Revealed via Interactions) -->
+  <div id="hidden-content" class="hidden">
+    <h2>Sahana in the Stars</h2>
+    <p>Click on the shooting stars to uncover secrets!</p>
+  </div>
 
-        <button id="loveLetter">📜 Open Secret Message</button>
-        <div id="letterContent">
-            <p>Dear Sahana,</p>
-            <p>You are the most beautiful mystery in my universe.  
-               Just like the stars guide travelers, you guide my heart.  
-               I can't wait for the day our galaxies finally collide.  
-               Until then, I send my love across the cosmic waves.</p>
-            <p>Yours forever,</p>
-            <p>Sashi 💖</p>
-        </div>
-    </div>
+  <!-- Audio Elements -->
+  <audio id="background-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
